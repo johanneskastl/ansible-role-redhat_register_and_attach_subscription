@@ -1,0 +1,9 @@
+---
+# redhat_register_and_attach_subscription/tasks/main.yml
+
+- name: 'Register system and attach, if desired by the user'
+  community.general.redhat_subscription:
+    state: 'present'
+    username: "{{ redhat_username }}"
+    password: "{{ redhat_password }}"
+    auto_attach: "{{ redhat_subscription_auto_attach }}"

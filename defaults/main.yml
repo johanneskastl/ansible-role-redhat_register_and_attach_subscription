@@ -1,0 +1,4 @@
+---
+# redhat_register_and_attach_subscription/defaults/main.yml
+
+redhat_subscription_auto_attach: true
